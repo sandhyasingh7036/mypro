@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <button onclick="gototop()" id="mybtn">Top</button>
+<div class="container-fluid bg-primary text-center p-2"><i>Shop site</i></div>
+<nav class="navbar navbar-expand-lg bg-info sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="modal" data-bs-target="#login"href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="modal" data-bs-target="#signup" href="#">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+         
+         
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- login -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="Email" class="col-form-label">Email</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="col-form-label">Password</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row ">
+        <div class="blog border col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card" >
+                <img src="../image/b1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span id="myspan1">...</span>      
+                
+              <span id="myspan2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione? Maiores dignissimos ipsa porro, quia iure officia optio, aliquam voluptatum assumenda eligendi nobis quidem animi laborum atque cupiditate voluptate, harum perspiciatis? Voluptates id nulla, molestiae repellendus necessitatibus labore totam veritatis ea! Nisi perspiciatis labore vero non praesentium! Odit, modi consequatur!
+                        
+              </span>
+                  <a href="#" class="btn btn-primary"id ="myspan3" onclick="fun()">Readmore</a>
+                </div>
+              </div>
+        </div>
+        <div class="blog border  col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card" >
+                <img src="../image/b2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span id="myspan4">...</span>      
+                
+                  <span id="myspan5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione? Maiores dignissimos ipsa porro, quia iure officia optio, aliquam voluptatum assumenda eligendi nobis quidem animi laborum atque cupiditate voluptate, harum perspiciatis? Voluptates id nulla, molestiae repellendus necessitatibus labore totam veritatis ea! Nisi perspiciatis labore vero non praesentium! Odit, modi consequatur!
+                            
+                  </span>
+                  <a href="#" class="btn btn-primary"id ="myspan6" onclick="fun1()">ReadMore</a>
+                </div>
+              </div>
+        </div>
+        <div class="blog border col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card" >
+                <img src="../image/b3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              <span id="myspan7">...</span>      
+                
+              <span id="myspan8"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione? Maiores dignissimos ipsa porro, quia iure officia optio, aliquam voluptatum assumenda eligendi nobis quidem animi laborum atque cupiditate voluptate, harum perspiciatis? Voluptates id nulla, molestiae repellendus necessitatibus labore totam veritatis ea! Nisi perspiciatis labore vero non praesentium! Odit, modi consequatur!
+                        
+              </span>
+                    <a href="#" class="btn btn-primary"id ="myspan9" onclick="fun2()">Readmore</a>
+                  
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="blog border col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card" >
+                <img src="../image/b5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span id="myspan10">...</span>      
+                
+                  <span id="myspan11"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ratione? Maiores dignissimos ipsa porro, quia iure officia optio, aliquam voluptatum assumenda eligendi nobis quidem animi laborum atque cupiditate voluptate, harum perspiciatis? Voluptates id nulla, molestiae repellendus necessitatibus labore totam veritatis ea! Nisi perspiciatis labore vero non praesentium! Odit, modi consequatur!
+                            
+                  </span>
+                  <a href="#" class="btn btn-primary"id ="myspan12" onclick="fun3()">Readmore</a>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+  </div>
+        
+  
+
+    <script src="./bootstrap.bundle.js"> </script>
+<script src="jquery.js"></script>
+<script src="result.js"></script>
+<script src="all.js"></script>
+</body>
+</html>

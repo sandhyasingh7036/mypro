@@ -1,0 +1,18 @@
+#mybtn{
+    display:none;
+    position:fixed;
+    top:89%;
+    left:95%;
+    z-index:99;
+}
+.form{
+    display:block;
+    z-index:99;
+    position:absolute;
+    left:85%;
+    top:50%;
+}
+#myspan2{display:none;}
+#myspan5{display:none;}
+#myspan8{display:none;}
+#myspan11{display:none;}
